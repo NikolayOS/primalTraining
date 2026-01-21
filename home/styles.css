@@ -1,0 +1,596 @@
+header {
+	width: 100%;
+	background-color: #E9ECFF;
+	height: 81px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin-left: 37px;
+	font-family: "Instrument Sans", sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.logo img {
+	max-width: 44px;
+	max-height: 26px;
+	margin-right: 5px;
+}
+
+.mobile-menu {
+	display: none;
+	margin-right: 20px;
+}
+
+.navigation {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px 37px;
+}
+
+.navigation li {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 12px 17px;
+	font-family: "Geist Mono", monospace;
+	font-weight: 400;
+	font-size: 15px;
+}
+
+.navigation li:not(:last-child) {
+	margin: 0 26px;
+}
+
+.navigation li:hover {
+	background-color: #808CFD;
+	border-radius: 7.25px;
+}
+
+.hero {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.hero .container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.hero h1 {
+	font-family: "Anek Tamil", sans-serif;
+	font-weight: 800;
+	font-size: clamp(56px, 10vw, 116px);
+	text-transform: uppercase;
+	letter-spacing: -5px;
+	line-height: 91%;
+	color: #000000;
+	padding: 20px;
+	border-top: #000000 1px solid;
+	border-bottom: #000000 1px solid;
+	width: 100%;
+	height: 168px;
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	flex-wrap: wrap;
+}
+
+
+.hero h1 span {
+	color: #808DFD;
+	padding-left: 10px;
+}
+
+.hero-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+
+
+.hero-list li:first-child {
+	width: 854px;
+	height: 480px;
+}
+
+.hero-list li img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.hero-list li:nth-child(2),
+.hero-list li:nth-child(3),
+.hero-list li:nth-child(4),
+.hero-list li:nth-child(5) {
+	width: 426px;
+	height: 480px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: #E9ECFF;
+	border-right: #00000085 1px solid;
+}
+
+.hero-list h4 {
+	font-family: "Anek Tamil", sans-serif;
+	font-weight: 600;
+	font-size: 45px;
+	text-transform: uppercase;
+	line-height: 91%;
+	color: #000000;
+	margin: 20px;
+}
+
+.hero-list p {
+	font-family: "Geist", sans-serif;
+	font-weight: 400;
+	font-size: 17px;
+	color: #000000;
+	margin: 0px 20px 66px 20px;
+}
+
+.hero-list p a {
+	display: block;
+	font-family: "Geist Mono", monospace;
+	font-weight: 400;
+	font-size: 15px;
+	color: #000000;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin: 20px;
+}
+
+
+
+.features {}
+
+.features .container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.features h2 {
+	font-family: "Anek Tamil", sans-serif;
+	font-weight: 800;
+	font-size: clamp(56px, 10vw, 116px);
+	text-transform: uppercase;
+	letter-spacing: -5px;
+	line-height: 91%;
+	color: #000000;
+	padding: 20px;
+	border-top: #000000 1px solid;
+	border-bottom: #000000 1px solid;
+	width: 100%;
+	height: 168px;
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	flex-wrap: wrap;
+}
+
+
+.features h2 span {
+	color: #808DFD;
+	padding-left: 10px;
+}
+
+.features ul {
+	width: 426px;
+	height: 600px;
+	background-color: #E9ECFF;
+	display: flex;
+	flex-direction: column;
+
+}
+
+.features ul li:first-child {
+	font-family: "Anek Tamil", sans-serif;
+	font-weight: 700;
+	font-size: 45px;
+	text-transform: uppercase;
+	color: #000000;
+	padding: 34.5px 56px 34.5px 20px;
+	letter-spacing: -3%;
+	line-height: 91%;
+}
+
+.features ul li:not(:first-child) {
+	padding: 18.5px 19.8px;
+	height: 112.25px;
+	border-top: #0000006b 1px solid;
+}
+
+.features h5 {
+	font-family: "Anek Tamil", sans-serif;
+	font-weight: 700;
+	font-size: 25px;
+	color: #000000;
+	text-transform: uppercase;
+	line-height: 91%;
+	margin-bottom: 6px;
+}
+
+.features p {
+	font-family: "Geist", sans-serif;
+	font-weight: 400;
+	font-size: 17px;
+	color: #000000;
+	line-height: 131%;
+}
+
+.features ul li:last-child {
+	display: flex;
+	justify-content: left;
+	padding: 35.62px 265px 35.62px 20px;
+}
+
+
+.features ul li a {
+	display: block;
+	font-family: "Geist Mono", monospace;
+	font-weight: 400;
+	font-size: 15px;
+	color: #000000;
+	text-transform: uppercase;
+	width: 141px;
+}
+
+.photo {
+	width: 854px;
+	height: 600px;
+}
+
+.cta .container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 480px;
+	background-color: #808CFD;
+
+}
+
+.cta h6 {
+	font-family: "Geist", sans-serif;
+	font-weight: 400;
+	font-size: 17px;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.cta h3 {
+	font-family: "Anek Tamil", sans-serif;
+	font-weight: 700;
+	font-size: 57px;
+	text-transform: uppercase;
+	color: #000000;
+	letter-spacing: -5%;
+	text-align: center;
+}
+
+.cta a {
+	width: 185px;
+	height: 41px;
+	border-radius: 7.25px;
+	background-color: #E9ECFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "Geist Mono", monospace;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 110%;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+footer .container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #E9ECFF;
+	padding: 40px;
+}
+
+.footer-head {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding: 30px;
+	background-color: #E9ECFF;
+}
+
+.footer-head img {
+	width: 80px;
+}
+
+.footer-head a {
+	font-family: "Instrument Sans", sans-serif;
+	font-weight: 700;
+	font-size: 52px;
+	color: #000000;
+}
+
+footer .container ul {
+	margin-bottom: 20px;
+}
+
+footer .container p {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+footer .container span {
+	width: 95px;
+	margin-right: 50px;
+}
+
+
+
+footer .container ul div {
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+@media (max-width: 800px) {
+	.hero-list li:first-child {
+		width: 533px;
+		height: 300px;
+	}
+
+	.hero-list li:not(:first-child) {
+		width: 266px;
+		height: 300px;
+	}
+
+	.hero-list h4 {
+		font-size: 35px;
+	}
+
+	.features ul li:first-child {
+		font-size: 36px;
+		padding: 17px 20px;
+	}
+
+	.features ul li:not(:first-child) {
+		padding: 17px 19px;
+		border-top: #0000006b 1px solid;
+	}
+
+	.features ul {
+		height: 470px;
+	}
+
+	.photo {
+		width: 400px;
+		height: 470px;
+		overflow: hidden;
+		position: relative;
+	}
+
+
+	.features .photo img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center;
+	}
+}
+
+@media (max-width: 375px) {
+	.navigation.active {
+		position: absolute;
+		transform: translateX(-323px);
+		margin-top: 54.5px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		padding: 40px 37px;
+		width: 375px;
+		height: 100%;
+		background-color: rgba(255, 255, 255, 0.911);
+		transition: transform 0.5s ease-in-out;
+		font-family: "Geist Mono", monospace;
+		font-weight: 400;
+		font-size: 30px;
+		text-transform: uppercase;
+		z-index: 10;
+		overflow: hidden;
+	}
+
+	.navigation {
+		position: absolute;
+		transform: translateX(500px);
+		margin-top: 54.5px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		padding: 40px 37px;
+		width: 375px;
+		height: 100%;
+		background-color: rgba(255, 255, 255, 0.911);
+		transition: transform 0.5s ease-in-out;
+		font-family: "Geist Mono", monospace;
+		font-weight: 400;
+		font-size: 30px;
+		text-transform: uppercase;
+		z-index: 10;
+		overflow: hidden;
+	}
+
+	.navigation li {
+		display: flex;
+		align-items: center;
+		justify-content: left;
+		width: 100%;
+		padding: 12px 17px;
+		font-family: "Geist Mono", monospace;
+		font-weight: 400;
+		font-size: 15px;
+		border-bottom: #000000 1px solid;
+	}
+
+	.navigation li:hover {
+		background-color: #808CFD;
+		border-radius: 7.25px;
+	}
+
+
+
+	.mobile-menu {
+		display: block;
+		cursor: pointer;
+	}
+
+	.open {
+		display: none;
+	}
+
+	.close {
+		display: block;
+	}
+
+	.mobile-menu.active .open {
+		display: block;
+	}
+
+	.mobile-menu.active .close {
+		display: none;
+	}
+
+	.hero h1 {
+		height: 130px;
+		padding: 10px;
+	}
+
+	.hero h1 span {
+		padding-left: 15px;
+	}
+
+
+	.hero-list {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 375px;
+	}
+
+	.hero-list li:not(:first-child) {
+		width: 375px;
+	}
+
+
+	.hero-list li:nth-child(1) {
+		width: 375px;
+		height: 225px;
+	}
+
+	.hero-list li:nth-child(2) {
+		height: 309px;
+	}
+
+	.hero-list li:nth-child(3) {
+		height: 238px;
+	}
+
+	.hero-list li:nth-child(4) {
+		height: 238px;
+	}
+
+	.hero-list li:nth-child(5) {
+		height: 479px;
+	}
+
+	.hero-list li:nth-child(3) {
+		order: 5;
+	}
+
+	.hero-list li:nth-child(5) {
+		order: 3;
+	}
+
+	.hero-list li:nth-child(3) {
+		order: 4;
+	}
+
+	.hero-list li:nth-child(4) {
+		order: 5;
+	}
+
+
+	.features .container {
+		flex-direction: column-reverse;
+	}
+
+	.features ul {
+		height: 495px;
+		width: 375px;
+	}
+
+	.features ul li:first-child {
+		font-size: 36px;
+		padding: 17px 20px;
+	}
+
+	.features ul li:not(:first-child) {
+		padding: 17px 19px;
+		border-top: #0000006b 1px solid;
+	}
+
+	.photo {
+		width: 375px;
+		height: 225px;
+		overflow: hidden;
+		position: relative;
+	}
+
+
+	.features .photo img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center;
+	}
+
+	.cta .container {
+		width: 100%;
+		height: 510px;
+	}
+
+
+	footer .container {
+		flex-direction: column;
+	}
+
+	.footer-head a {
+		font-size: 32px;
+	}
+
+	.footer-head {
+		flex-direction: column;
+	}
+}

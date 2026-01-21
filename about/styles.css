@@ -1,0 +1,419 @@
+header {
+	width: 100%;
+	background-color: #E9ECFF;
+	height: 81px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin-left: 37px;
+	font-family: "Instrument Sans", sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.logo img {
+	max-width: 44px;
+	max-height: 26px;
+	margin-right: 5px;
+}
+
+.mobile-menu {
+	display: none;
+	margin-right: 20px;
+}
+
+.navigation {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px 37px;
+}
+
+.navigation li {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 12px 17px;
+	font-family: "Geist Mono", monospace;
+	font-weight: 400;
+	font-size: 15px;
+}
+
+.navigation li:not(:last-child) {
+	margin: 0 26px;
+}
+
+.navigation li:hover {
+	background-color: #808CFD;
+	border-radius: 7.25px;
+}
+
+.about-hero {}
+
+.about-hero h1 {
+	font-family: "Anek Tamil", sans-serif;
+	font-weight: 800;
+	font-size: 116px;
+	text-transform: uppercase;
+	letter-spacing: -5px;
+	line-height: 110%;
+	color: #000000;
+	padding: 20px;
+	border-top: #000000 1px solid;
+	border-bottom: #000000 1px solid;
+	max-width: 100%;
+	max-height: 168px;
+	display: flex;
+	align-items: center;
+	justify-content: left;
+}
+
+.about-hero .container {}
+
+.about-hero .container ul {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+}
+
+.about-hero .container ul li {
+	height: 480px;
+	padding: 30px 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.about-hero .container h4 {
+	font-family: "Anek Tamil", sans-serif;
+	font-weight: 700;
+	font-size: 45px;
+	line-height: 91%;
+	color: #000000;
+	margin-bottom: 235px;
+	text-transform: uppercase;
+}
+
+.about-hero .container h6 {
+	font-family: "Anek Tamil", sans-serif;
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 131%;
+	color: #000000;
+}
+
+.about-hero .container p {
+	font-family: "Geist, sans-serif";
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 131%;
+	color: #000000;
+}
+
+.about-hero .container ul li:first-child {
+	background-color: #808CFD;
+
+}
+
+.photo-1 {
+	background-image: url('../about/aboutIMG/Image00.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+
+.photo-2 {
+	background-image: url('../about/aboutIMG/Image000.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+.about-hero .container ul li:last-child {
+	grid-column: 1 / -1;
+	background-image: url('../about/aboutIMG/Reconnect\ section.png');
+}
+
+
+
+.about-cta .container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 480px;
+	background-color: #E9ECFF;
+}
+
+.about-cta h6 {
+	font-family: "Geist", sans-serif;
+	font-weight: 400;
+	font-size: 17px;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.about-cta h3 {
+	font-family: "Anek Tamil", sans-serif;
+	font-weight: 700;
+	font-size: 57px;
+	text-transform: uppercase;
+	color: #000000;
+	letter-spacing: -5%;
+	text-align: center;
+	margin: 18px 0;
+}
+
+.about-cta a {
+	width: 185px;
+	height: 41px;
+	border-radius: 7.25px;
+	background-color: #808CFD;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "Geist Mono", monospace;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 110%;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+footer .container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #E9ECFF;
+	padding: 40px;
+}
+
+.footer-head {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding: 30px;
+	background-color: #E9ECFF;
+}
+
+.footer-head img {
+	width: 80px;
+}
+
+.footer-head a {
+	font-family: "Instrument Sans", sans-serif;
+	font-weight: 700;
+	font-size: 52px;
+	color: #000000;
+}
+
+footer .container ul {
+	margin-bottom: 20px;
+}
+
+footer .container p {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+footer .container span {
+	width: 95px;
+	margin-right: 50px;
+}
+
+
+
+footer .container ul div {
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+@media (max-width: 799px) {
+
+	.about-hero .container ul li:not(:last-child) {
+		width: 400px;
+		height: 375px;
+	}
+
+	.about-hero .container h4 {
+		margin-bottom: 36px;
+		font-size: 35px;
+	}
+
+
+	.photo-1 {
+		background-image: url('../about/aboutIMG/Image-11.jpg');
+	}
+
+	.photo-2 {
+		background-image: url('../about/aboutIMG/Image-111.jpg');
+
+	}
+
+	.about-hero .container ul li:last-child {
+		background-image: url('../about/aboutIMG/Reconnect\ section-1.png');
+		height: 375px;
+	}
+
+}
+
+@media (max-width: 375px) {
+
+	.navigation.active {
+		position: absolute;
+		transform: translateX(-323px);
+		margin-top: 54.5px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		padding: 40px 37px;
+		width: 375px;
+		height: 100%;
+		background-color: rgba(255, 255, 255, 0.911);
+		transition: transform 0.5s ease-in-out;
+		font-family: "Geist Mono", monospace;
+		font-weight: 400;
+		font-size: 30px;
+		text-transform: uppercase;
+		z-index: 10;
+		overflow: hidden;
+	}
+
+	.navigation {
+		position: absolute;
+		transform: translateX(500px);
+		margin-top: 54.5px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		padding: 40px 37px;
+		width: 375px;
+		height: 100%;
+		background-color: rgba(255, 255, 255, 0.911);
+		transition: transform 0.5s ease-in-out;
+		font-family: "Geist Mono", monospace;
+		font-weight: 400;
+		font-size: 30px;
+		text-transform: uppercase;
+		z-index: 10;
+		overflow: hidden;
+	}
+
+	.navigation li {
+		display: flex;
+		align-items: center;
+		justify-content: left;
+		width: 100%;
+		padding: 12px 17px;
+		font-family: "Geist Mono", monospace;
+		font-weight: 400;
+		font-size: 15px;
+		border-bottom: #000000 1px solid;
+	}
+
+	.navigation li:hover {
+		background-color: #808CFD;
+		border-radius: 7.25px;
+	}
+
+
+
+	.mobile-menu {
+		display: block;
+		cursor: pointer;
+	}
+
+	.open {
+		display: none;
+	}
+
+	.close {
+		display: block;
+	}
+
+	.mobile-menu.active .open {
+		display: block;
+	}
+
+	.mobile-menu.active .close {
+		display: none;
+	}
+
+	.about-hero h1 {
+		font-size: 76px;
+	}
+
+	.about-hero .container ul {
+		grid-template-columns: 1fr;
+	}
+
+	.about-hero .container ul li:nth-child(1),
+	.about-hero .container ul li:nth-child(5) {
+		width: 375px;
+		height: 480px;
+	}
+
+	.about-hero .container ul li:nth-child(2),
+	.about-hero .container ul li:nth-child(3),
+	.about-hero .container ul li:nth-child(4) {
+		width: 375px;
+		height: 225px;
+	}
+
+	.about-hero .container ul li:nth-child(1) {
+		grid-row: 2;
+	}
+
+	.about-hero .container ul li:nth-child(2) {
+		grid-row: 1;
+	}
+
+	.about-hero .container ul li:last-child {
+		background-image: url('../about/aboutIMG/Reconnect\ section-2.png');
+	}
+
+	.photo-1 {
+		background-image: url('../about/aboutIMG/Image-22.jpg');
+	}
+
+	.photo-2 {
+		background-image: url('../about/aboutIMG/Image-222.jpg');
+	}
+
+	.about-cta h3 {
+		font-size: 44px;
+	}
+
+	footer .container {
+		flex-direction: column;
+	}
+
+	.footer-head a {
+		font-size: 32px;
+	}
+
+	.footer-head {
+		flex-direction: column;
+	}
+}
