@@ -34,21 +34,21 @@ header {
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
-	padding: 0px 37px;
+	padding: 0px 10px;
 }
 
 .navigation li {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 12px 17px;
+	padding: 12px;
 	font-family: "Geist Mono", monospace;
 	font-weight: 400;
-	font-size: 15px;
+	font-size: clamp(12px, 2vw, 15px);
 }
 
 .navigation li:not(:last-child) {
-	margin: 0 26px;
+	margin: 0 16px;
 }
 
 .navigation li:hover {
@@ -61,7 +61,7 @@ header {
 .about-hero h1 {
 	font-family: "Anek Tamil", sans-serif;
 	font-weight: 800;
-	font-size: 116px;
+	font-size: clamp(56px, 6vw, 116px);
 	text-transform: uppercase;
 	letter-spacing: -5px;
 	line-height: 110%;
@@ -84,8 +84,7 @@ header {
 }
 
 .about-hero .container ul li {
-	height: 480px;
-	padding: 30px 20px;
+	max-height: 480px;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -98,7 +97,7 @@ header {
 	font-size: 45px;
 	line-height: 91%;
 	color: #000000;
-	margin-bottom: 235px;
+	margin: 20px 20px 200px 20px;
 	text-transform: uppercase;
 }
 
@@ -108,14 +107,17 @@ header {
 	font-size: 22px;
 	line-height: 131%;
 	color: #000000;
+	margin: 0px 0px 0px 20px;
 }
 
 .about-hero .container p {
+	display: block;
 	font-family: "Geist, sans-serif";
 	font-weight: 400;
 	font-size: 17px;
 	line-height: 131%;
 	color: #000000;
+	margin: 20px;
 }
 
 .about-hero .container ul li:first-child {
@@ -123,19 +125,19 @@ header {
 
 }
 
-.photo-1 {
-	background-image: url('../about/aboutIMG/Image00.jpg');
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: contain;
+.photo-1 img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+
 }
 
 
-.photo-2 {
-	background-image: url('../about/aboutIMG/Image000.jpg');
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: contain;
+.photo-2 img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+
 }
 
 .about-hero .container ul li:last-child {
@@ -195,7 +197,6 @@ header {
 
 
 
-
 footer .container {
 	display: flex;
 	flex-direction: row;
@@ -215,18 +216,19 @@ footer .container {
 }
 
 .footer-head img {
-	width: 80px;
+	width: 16%;
+	max-width: 80px;
 }
 
 .footer-head a {
 	font-family: "Instrument Sans", sans-serif;
 	font-weight: 700;
-	font-size: 52px;
+	font-size: clamp(28px, 4vw, 52px);
 	color: #000000;
 }
 
 footer .container ul {
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
 footer .container p {
@@ -236,7 +238,6 @@ footer .container p {
 }
 
 footer .container span {
-	width: 95px;
 	margin-right: 50px;
 }
 
@@ -247,47 +248,79 @@ footer .container ul div {
 	text-transform: uppercase;
 }
 
-@media (max-width: 799px) {
 
-	.about-hero .container ul li:not(:last-child) {
-		width: 400px;
-		height: 375px;
+
+footer .container ul div {
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+@media (max-width: 799px) {
+	.about-hero .container ul {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto auto;
 	}
 
 	.about-hero .container h4 {
-		margin-bottom: 36px;
-		font-size: 35px;
+		font-family: "Anek Tamil", sans-serif;
+		font-weight: 700;
+		font-size: clamp(36px, 4vw, 45px);
+		line-height: 91%;
+		color: #000000;
+		margin: 20px;
+		text-transform: uppercase;
 	}
 
-
-	.photo-1 {
-		background-image: url('../about/aboutIMG/Image-11.jpg');
+	.about-hero .container h6 {
+		font-family: "Anek Tamil", sans-serif;
+		font-weight: 700;
+		font-size: clamp(16px, 4vw, 22px);
+		line-height: 131%;
+		color: #000000;
+		margin: 0px 0px 0px 20px;
 	}
 
-	.photo-2 {
-		background-image: url('../about/aboutIMG/Image-111.jpg');
-
+	.about-hero .container p {
+		display: block;
+		font-family: "Geist, sans-serif";
+		font-weight: 400;
+		font-size: clamp(12px, 4vw, 17px);
+		line-height: 131%;
+		color: #000000;
+		margin: 20px;
 	}
+}
 
-	.about-hero .container ul li:last-child {
-		background-image: url('../about/aboutIMG/Reconnect\ section-1.png');
-		height: 375px;
+
+@media (max-width: 650px) {
+	footer .container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		padding: 20px;
 	}
 
 }
 
-@media (max-width: 375px) {
+@media (max-width: 550px) {
+	body.navigation {
+		overflow: hidden;
+	}
+
+	body.navigation.active {
+		overflow: hidden;
+	}
 
 	.navigation.active {
-		position: absolute;
-		transform: translateX(-323px);
+		position: fixed;
+		transform: translateX(-89%);
 		margin-top: 54.5px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: flex-start;
 		padding: 40px 37px;
-		width: 375px;
+		width: 100%;
 		height: 100%;
 		background-color: rgba(255, 255, 255, 0.911);
 		transition: transform 0.5s ease-in-out;
@@ -300,8 +333,8 @@ footer .container ul div {
 	}
 
 	.navigation {
-		position: absolute;
-		transform: translateX(500px);
+		position: fixed;
+		transform: translateX(100%);
 		margin-top: 54.5px;
 		display: flex;
 		flex-direction: column;
@@ -360,25 +393,10 @@ footer .container ul div {
 		display: none;
 	}
 
-	.about-hero h1 {
-		font-size: 76px;
-	}
-
 	.about-hero .container ul {
+		display: grid;
 		grid-template-columns: 1fr;
-	}
-
-	.about-hero .container ul li:nth-child(1),
-	.about-hero .container ul li:nth-child(5) {
-		width: 375px;
-		height: 480px;
-	}
-
-	.about-hero .container ul li:nth-child(2),
-	.about-hero .container ul li:nth-child(3),
-	.about-hero .container ul li:nth-child(4) {
-		width: 375px;
-		height: 225px;
+		grid-template-rows: auto;
 	}
 
 	.about-hero .container ul li:nth-child(1) {
@@ -389,31 +407,10 @@ footer .container ul div {
 		grid-row: 1;
 	}
 
-	.about-hero .container ul li:last-child {
-		background-image: url('../about/aboutIMG/Reconnect\ section-2.png');
-	}
-
-	.photo-1 {
-		background-image: url('../about/aboutIMG/Image-22.jpg');
-	}
-
-	.photo-2 {
-		background-image: url('../about/aboutIMG/Image-222.jpg');
-	}
-
-	.about-cta h3 {
-		font-size: 44px;
-	}
-
 	footer .container {
-		flex-direction: column;
+		grid-template-columns: 1fr;
+		justify-items: center;
+		align-items: center;
 	}
 
-	.footer-head a {
-		font-size: 32px;
-	}
-
-	.footer-head {
-		flex-direction: column;
-	}
 }

@@ -34,21 +34,21 @@ header {
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
-	padding: 0px 37px;
+	padding: 0px 10px;
 }
 
 .navigation li {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 12px 17px;
+	padding: 12px;
 	font-family: "Geist Mono", monospace;
 	font-weight: 400;
-	font-size: 15px;
+	font-size: clamp(12px, 2vw, 15px);
 }
 
 .navigation li:not(:last-child) {
-	margin: 0 26px;
+	margin: 0 16px;
 }
 
 .navigation li:hover {
@@ -60,7 +60,7 @@ header {
 .categories h1 {
 	font-family: "Anek Tamil", sans-serif;
 	font-weight: 800;
-	font-size: clamp(56px, 8vw, 116px);
+	font-size: clamp(36px, 8vw, 116px);
 	text-transform: uppercase;
 	letter-spacing: -5px;
 	line-height: 110%;
@@ -69,7 +69,7 @@ header {
 	border-top: #000000 1px solid;
 	border-bottom: #000000 1px solid;
 	width: 100%;
-	height: 168px;
+	padding: 30px 20px;
 	display: flex;
 	align-items: center;
 	justify-content: left;
@@ -99,7 +99,7 @@ header {
 .categories-list h4 {
 	font-family: "Anek Tamil", sans-serif;
 	font-weight: 700;
-	font-size: 36px;
+	font-size: clamp(30px, 4vw, 36px);
 	text-transform: uppercase;
 	line-height: 91%;
 	color: #000000;
@@ -165,7 +165,7 @@ header {
 .reserve-cta h3 {
 	font-family: "Anek Tamil", sans-serif;
 	font-weight: 700;
-	font-size: 57px;
+	font-size: clamp(36px, 4vw, 57px);
 	text-transform: uppercase;
 	color: #000000;
 	letter-spacing: -5%;
@@ -211,18 +211,19 @@ footer .container {
 }
 
 .footer-head img {
-	width: 80px;
+	width: 16%;
+	max-width: 80px;
 }
 
 .footer-head a {
 	font-family: "Instrument Sans", sans-serif;
 	font-weight: 700;
-	font-size: 52px;
+	font-size: clamp(28px, 4vw, 52px);
 	color: #000000;
 }
 
 footer .container ul {
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
 footer .container p {
@@ -232,7 +233,6 @@ footer .container p {
 }
 
 footer .container span {
-	width: 95px;
 	margin-right: 50px;
 }
 
@@ -243,16 +243,143 @@ footer .container ul div {
 	text-transform: uppercase;
 }
 
-@media (max-width: 799px) {
+
+
+footer .container ul div {
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+@media (max-width: 899px) {
+	.categories-list {
+		flex-direction: column;
+	}
+
 	.categories-list h4 {
 		margin: 20px 10px 30px 10px;
 	}
 
 	.categories-list li {
+		width: 100%;
+		height: auto;
 		padding: 10px;
 	}
 }
 
+@media (max-width: 650px) {
+	footer .container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		padding: 20px;
+	}
+
+
+}
+
+@media (max-width: 550px) {
+	body.navigation {
+		overflow: hidden;
+	}
+
+	body.navigation.active {
+		overflow: hidden;
+	}
+
+	.navigation.active {
+		position: fixed;
+		transform: translateX(-89%);
+		margin-top: 54.5px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		padding: 40px 37px;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(255, 255, 255, 0.911);
+		transition: transform 0.5s ease-in-out;
+		font-family: "Geist Mono", monospace;
+		font-weight: 400;
+		font-size: 30px;
+		text-transform: uppercase;
+		z-index: 10;
+		overflow: hidden;
+	}
+
+	.navigation {
+		position: fixed;
+		transform: translateX(100%);
+		margin-top: 54.5px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		padding: 40px 37px;
+		width: 375px;
+		height: 100%;
+		background-color: rgba(255, 255, 255, 0.911);
+		transition: transform 0.5s ease-in-out;
+		font-family: "Geist Mono", monospace;
+		font-weight: 400;
+		font-size: 30px;
+		text-transform: uppercase;
+		z-index: 10;
+		overflow: hidden;
+	}
+
+	.navigation li {
+		display: flex;
+		align-items: center;
+		justify-content: left;
+		width: 100%;
+		padding: 12px 17px;
+		font-family: "Geist Mono", monospace;
+		font-weight: 400;
+		font-size: 15px;
+		border-bottom: #000000 1px solid;
+	}
+
+	.navigation li:hover {
+		background-color: #808CFD;
+		border-radius: 7.25px;
+	}
+
+
+
+	.mobile-menu {
+		display: block;
+		cursor: pointer;
+	}
+
+	.open {
+		display: none;
+	}
+
+	.close {
+		display: block;
+	}
+
+	.mobile-menu.active .open {
+		display: block;
+	}
+
+	.mobile-menu.active .close {
+		display: none;
+	}
+
+	.categories h1 {
+		padding: 20px 10px;
+	}
+
+	footer .container {
+		grid-template-columns: 1fr;
+		justify-items: center;
+		align-items: center;
+	}
+
+}
+
+/* 
 @media (max-width: 375px) {
 
 	.navigation.active {
@@ -368,4 +495,4 @@ footer .container ul div {
 	.footer-head {
 		flex-direction: column;
 	}
-}
+} */
