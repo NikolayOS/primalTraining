@@ -12,5 +12,4 @@ mobileNav.addEventListener('click', () => {
 		document.body.style.overflow = 'hidden';
 		check = true;
 	}
-	console.log(check);
 });
